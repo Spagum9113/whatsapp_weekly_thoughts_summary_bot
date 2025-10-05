@@ -6,5 +6,6 @@ requests
 twilio
 python-multipart
 gunicorn
+uvicorn
 
 
