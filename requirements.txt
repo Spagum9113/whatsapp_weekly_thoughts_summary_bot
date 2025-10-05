@@ -1,0 +1,8 @@
+fastapi
+python-dotenv
+openai
+aiohttp
+requests
+twilio
+python-multipart
+
