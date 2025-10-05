@@ -7,5 +7,4 @@ twilio
 python-multipart
 gunicorn
 uvicorn
-
-
+supabase
