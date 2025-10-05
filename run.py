@@ -7,6 +7,7 @@ from supabase_client import supabase
 from datetime import datetime, timezone
 from dotenv import load_dotenv
 from twilio.request_validator import RequestValidator
+from send_twilio import send_whatsapp_message
 import uvicorn
 import os
 import json
@@ -64,6 +65,9 @@ async def twilio_whatsapp_webhook(request: Request):
         )
 
         print(f"Saved note: {saved_note}")
+
+    # send response so i know it was recieved
+    send_whatsapp_message('kk')
 
     # Fast ack (no reply)
     return PlainTextResponse(status_code=200, content="OK")
