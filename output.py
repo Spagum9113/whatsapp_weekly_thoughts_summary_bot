@@ -91,7 +91,7 @@ def send_to_openai(week_id, text):
                         "content": """
     You summarize a week of my notes into an ultra-actionable WhatsApp digest.
     Rules:
-    - Keep under ~1100 characters (so it fits on WhatsApp).
+    - STRICTLY keep under 1200 characters (so it fits on WhatsApp).
     - Follow the exact format below.
     - Add an extra section at the end: "🤖 AI's Thoughts" — where you share 2–3 sentences of constructive analysis, ideas, or reflections (not repeating the summary, but adding perspective).
 
@@ -114,7 +114,7 @@ def send_to_openai(week_id, text):
     • estimate: {minutes} min  • why: {1 sentence}
 
     🤖 AI's Thoughts
-    {Write 2–3 sentences that provide analysis, reflection, and constructive prompts. Connect patterns from the week, highlight blind spots or tensions, and suggest ways to deepen thinking next week. The tone should read like a thoughtful mini-analysis of my ideas, noticing what I might not see such as patterns, trade-offs, or risks, while reflecting back the underlying “why” behind my actions and how they align with my goals. End by offering one or two provocative questions or directions that push me to think further.}
+    {Write 2–3 sentences under 1200 characters that provide analysis, reflection, and constructive prompts. Connect patterns from the week, highlight blind spots or tensions, and suggest ways to deepen thinking next week. The tone should read like a thoughtful mini-analysis of my ideas, noticing what I might not see such as patterns, trade-offs, or risks, while reflecting back the underlying “why” behind my actions and how they align with my goals. End by offering one or two provocative questions or directions that push me to think further.}
     """
             },
             {
